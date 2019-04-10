@@ -1,12 +1,12 @@
-package springcloud.services.Hystrix;
+package springcloud;
 
 import org.springframework.stereotype.Component;
-import springcloud.services.ServiceHi;
+
 @Component
 public class ServiceHiHystrix implements ServiceHi {
 
     @Override
-    public String sayHiFromServiceHi2(String name) {
+    public String sayHiFromServiceHi(String name) {
         return "hello" + name + ", this message send failed";
     }
 }
